@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--   <style>
+        .container {
+            max-width: 890px;
+            max-height: 500px;
+            background-color: blanchedalmond;
+        }
+        * {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #mouse {
+            z-index: 10000;
+            position: static;
+            color: white;
+            font-size: 50px;
+            background-color: black;
+            width: 100px;
+            height: 100px;
+            border-radius: 60%;
+        }
+        #mouse1 {
+            z-index: 10000;
+            top: 100px;
+            position: static;
+            background-color: rgb(37, 37, 198);
+            width: 60px;
+            height: 60px;
+            border-radius: 60%;
+        }
+        #mouse2 {
+            z-index: 10000;
+            position: static;
+            background-color: rgb(217, 255, 0);
+            width: 40px;
+            height: 40px;
+            border-radius: 60%;
+        }
+        #mouse3 {
+            z-index: 10000;
+            position: static;
+            background-color: rgb(255, 8, 8);
+            width: 20px;
+            height: 20px;
+            border-radius: 60%;
+        }
+        #mouse, #mouse1, #mouse2, #mouse3 {
+            transition-duration: 2s;
+        }
+    </style>
+    <button onclick="Click(1)">1</button>
+    <button onclick="Click(2)">2</button>
+    <button onclick="Click(3)">3</button>
+    <button onclick="Click(4)">4</button>
+    <button onclick="Click(5)">5</button>
+    <button onclick="Click(0)">0</button>
+    <button onclick="Operand('+')">+</button>
+    <button onclick="Operand('-')">-</button>
+    <button onclick="Operand('/')">/</button>
+    <button onclick="Operand('*')">X</button>
+    <button onclick="Calculate()">=</button>
+    <button onclick="Clear()">Clear</button>
+    <h4></h4>
+    <h1></h1>
+    <div class="container">
+        <div id="mouse"></div>
+        <div id="mouse1"></div>
+        <div id="mouse2"></div>
+        <div id="mouse3"></div>
+    </div>
+-->
+<style>
+    section {
+        display: grid;
+        place-content: center;
+        grid-gap: 10px;
+    }
+    .container {
+        background-color: rgb(0, 238, 255);
+        border-radius: 6.6px;
+    }
+    .card-image {
+        width: 100%;
+        height: auto;
+    }
+</style>
+<section>
+    <div class="container">
+        <img class = "card-image" src = "http://cdn.shopify.com/s/files/1/0270/1898/5515/products/hello1_1024x.jpg?v=1603817480">
+        <h3 class = "title">Title</h3>
+        <p class = "text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, sapiente qui dolorum inventore itaque recusandae molestiae odit vero facere alias dolores quas ut, saepe perspiciatis repudiandae aspernatur, fuga voluptatem. Consectetur!</p>
+    </div>
+    <div class="container">
+        <img class = "card-image" src = "http://cdn.shopify.com/s/files/1/0270/1898/5515/products/hello1_1024x.jpg?v=1603817480">
+        <h3 class = "title">Title</h3>
+        <p class = "text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, sapiente qui dolorum inventore itaque recusandae molestiae odit vero facere alias dolores quas ut, saepe perspiciatis repudiandae aspernatur, fuga voluptatem. Consectetur!</p>
+    </div>
+    <div class="container">
+        <img class = "card-image" src = "http://cdn.shopify.com/s/files/1/0270/1898/5515/products/hello1_1024x.jpg?v=1603817480">
+        <h3 class = "title">Title</h3>
+        <p class = "text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, sapiente qui dolorum inventore itaque recusandae molestiae odit vero facere alias dolores quas ut, saepe perspiciatis repudiandae aspernatur, fuga voluptatem. Consectetur!</p>
+    </div>
+    <div class="container">
+        <img class = "card-image" src = "http://cdn.shopify.com/s/files/1/0270/1898/5515/products/hello1_1024x.jpg?v=1603817480">
+        <h3 class = "title">Title</h3>
+        <p class = "text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, sapiente qui dolorum inventore itaque recusandae molestiae odit vero facere alias dolores quas ut, saepe perspiciatis repudiandae aspernatur, fuga voluptatem. Consectetur!</p>
+    </div>
+    <div class="container">
+        <img class = "card-image" src = "http://cdn.shopify.com/s/files/1/0270/1898/5515/products/hello1_1024x.jpg?v=1603817480">
+        <h3 class = "title">Title</h3>
+        <p class = "text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, sapiente qui dolorum inventore itaque recusandae molestiae odit vero facere alias dolores quas ut, saepe perspiciatis repudiandae aspernatur, fuga voluptatem. Consectetur!</p>
+    </div>
+    <div class="container">
+        <img class = "card-image" src = "http://cdn.shopify.com/s/files/1/0270/1898/5515/products/hello1_1024x.jpg?v=1603817480">
+        <h3 class = "title">Title</h3>
+        <p class = "text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, sapiente qui dolorum inventore itaque recusandae molestiae odit vero facere alias dolores quas ut, saepe perspiciatis repudiandae aspernatur, fuga voluptatem. Consectetur!</p>
+    </div>
+    <div class="container">
+        <img class = "card-image" src = "http://cdn.shopify.com/s/files/1/0270/1898/5515/products/hello1_1024x.jpg?v=1603817480">
+        <h3 class = "title">Title</h3>
+        <p class = "text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, sapiente qui dolorum inventore itaque recusandae molestiae odit vero facere alias dolores quas ut, saepe perspiciatis repudiandae aspernatur, fuga voluptatem. Consectetur!</p>
+    </div>
+    <div class="container">
+        <img class = "card-image" src = "http://cdn.shopify.com/s/files/1/0270/1898/5515/products/hello1_1024x.jpg?v=1603817480">
+        <h3 class = "title">Title</h3>
+        <p class = "text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, sapiente qui dolorum inventore itaque recusandae molestiae odit vero facere alias dolores quas ut, saepe perspiciatis repudiandae aspernatur, fuga voluptatem. Consectetur!</p>
+    </div>
+    <div class="container">
+        <img class = "card-image" src = "http://cdn.shopify.com/s/files/1/0270/1898/5515/products/hello1_1024x.jpg?v=1603817480">
+        <h3 class = "title">Title</h3>
+        <p class = "text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, sapiente qui dolorum inventore itaque recusandae molestiae odit vero facere alias dolores quas ut, saepe perspiciatis repudiandae aspernatur, fuga voluptatem. Consectetur!</p>
+    </div>
+    <div class="container">
+        <img class = "card-image" src = "http://cdn.shopify.com/s/files/1/0270/1898/5515/products/hello1_1024x.jpg?v=1603817480">
+        <h3 class = "title">Title</h3>
+        <p class = "text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, sapiente qui dolorum inventore itaque recusandae molestiae odit vero facere alias dolores quas ut, saepe perspiciatis repudiandae aspernatur, fuga voluptatem. Consectetur!</p>
+    </div>
+    <div class="container">
+        <img class = "card-image" src = "http://cdn.shopify.com/s/files/1/0270/1898/5515/products/hello1_1024x.jpg?v=1603817480">
+        <h3 class = "title">Title</h3>
+        <p class = "text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, sapiente qui dolorum inventore itaque recusandae molestiae odit vero facere alias dolores quas ut, saepe perspiciatis repudiandae aspernatur, fuga voluptatem. Consectetur!</p>
+    </div>
+    <div class="container">
+        <img class = "card-image" src = "http://cdn.shopify.com/s/files/1/0270/1898/5515/products/hello1_1024x.jpg?v=1603817480">
+        <h3 class = "title">Title</h3>
+        <p class = "text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, sapiente qui dolorum inventore itaque recusandae molestiae odit vero facere alias dolores quas ut, saepe perspiciatis repudiandae aspernatur, fuga voluptatem. Consectetur!</p>
+    </div>
+</section>
+    <script src="practise.js"></script>
+<body>
+</html>

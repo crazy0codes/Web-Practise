@@ -1,0 +1,66 @@
+/** {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: black;
+}
+h1::first-letter {
+    color: red;
+    font-size: 60px;
+}
+h1 {
+    text-decoration:underline;
+    text-decoration-color: white;
+}
+.photo_section {
+    display: flex;
+    align-items: center;
+}
+div {
+    margin: 20px;
+}
+h2 {
+    position: relative;
+}
+h2:hover::before {
+    background-color: rgb(0, 255, 0);
+}
+h2::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width:100%;
+    background-color: white;
+}
+h2::first-letter {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: red;
+    font-weight: 800;
+    font-size: 55px;
+}
+
+/*<!DOCTYPE html>
+<html>
+    <head>
+        <title>Madhan</title>
+        <link rel="stylesheet" href="practise.css">
+    </head>
+    <body>
+        <header><h1 style="font-family:monospace;">Main Anime characters</h1></header>
+        <main>
+            <section class="photo_section">
+                <img src="https://rukminim1.flixcart.com/image/416/416/kvfkivk0/poster/w/a/y/medium-eren-attack-on-titan-eren-jaeger-eren-yeager-shingeki-no-original-imag8c3fpyus38az.jpeg?q=70" alt="Eren Yeager">
+                <div>
+                    <h2>Eren Yeager</h2>
+                    <p style="font-family:Verdana, Geneva, Tahoma, sans-serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem animi alias, molestias dolorem nostrum ipsum nam enim assumenda sint illum. Facere, nobis at. Accusantium ipsam, sit voluptas officia quaerat ducimus.</p>
+                </div>
+            </section>
+        </main>
+        <script src="practise.js"></script>
+    </body>
+</html>*/
+
+.mouse {
+    background-color: black;
+    border-radius: 60%;
+}
