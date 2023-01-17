@@ -90,6 +90,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("https://wallpapercave.com/wp/wp8103002.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size:cover;
 }
 div:nth-child(1){
     transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -117,5 +121,6 @@ div:hover {
     width: 60%;
     height: 60%;
     transform: none;
+    border: 5px solid red;
     z-index: 1;
 }
