@@ -65,3 +65,19 @@ h2::first-letter {
     border-radius: 60%;
 }
 */
+body {
+    height: 1000px;
+}
+div {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main {
+    display: grid;
+    place-content: center;
+}
