@@ -127,7 +127,6 @@ alert(JSON.stringify(three));
 
 let Ball = document.querySelector('div');
 let Window_Height = window.innerHeight;
-let Window_Width = window.innerWidth;
 let Style_Tag= document.querySelector('style');
 if(Ball.style.margin == !Window_Height){
     Style_Tag.innerHTML = `
