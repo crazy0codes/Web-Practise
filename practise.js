@@ -122,6 +122,6 @@ let two = generator.next();
 let three = generator.next();
 alert(JSON.stringify(one));
 alert(JSON.stringify(two));
-alert(JSON.stringify(three));*/
+alert(JSON.stringify(three));
+*/
 
-let section = document.querySelector('section')
