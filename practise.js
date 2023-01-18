@@ -143,3 +143,4 @@ if(Ball.style.margin == !Window_Height){
     `
     Ball.style.animationName = "Bouncing"
 }
+// ONLY HALF WORK COMPLETED 
