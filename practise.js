@@ -128,14 +128,6 @@ alert(JSON.stringify(three));
 let Ball = document.querySelector('div');
 let Window_Height = window.innerHeight;
 let Style_Tag= document.querySelector('style');
-function check(){
-    if(Window_Height == window.innerHeight){
-        Window_Height = window.innerHeight;
-        console.log("Madhan");
-        check();
-    }
-    check();
-}
 if(Ball.style.margin == !Window_Height){
     Style_Tag.innerHTML = `
     @keyframes Bouncing {
