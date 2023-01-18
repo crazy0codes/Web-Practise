@@ -135,3 +135,22 @@ div:hover {
     z-index: 1;
 }
 */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+div {
+    background-color: rgb(37, 157, 255);
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: relative;
+    font-weight: 600;
+    color: white;
+}

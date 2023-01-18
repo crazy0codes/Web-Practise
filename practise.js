@@ -125,3 +125,22 @@ alert(JSON.stringify(two));
 alert(JSON.stringify(three));
 */
 
+let Ball = document.querySelector('div');
+let Window_Height = window.innerHeight;
+let Window_Width = window.innerWidth;
+let Style_Tag= document.querySelector('style');
+if(Ball.style.margin == !Window_Height){
+    Style_Tag.innerHTML = `
+    @keyframes Bouncing {
+        from {top: 0px;
+        background-color:rgb(87, 4, 87);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 43px;
+    }
+        to {top: ${Window_Height-142}px ;
+        background-color : rgb(141, 23, 196);
+    }
+      }
+    `
+    Ball.style.animationName = "Bouncing"
+}
