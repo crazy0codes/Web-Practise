@@ -147,12 +147,11 @@ if(Ball.style.margin == !Window_Height){
 */
 
 let Ball = document.querySelector('div');
-Window_Height = window.innerHeight;
-window.onresize = function(){Window_Height};
+let Window_Height = window.innerHeight;
+window.onresize = function(){Window_Height = window.innerHeight};
 let Style_Tag= document.querySelector('style');
 document.getElementsByTagName('section')[0].innerHTML = `Height is ${Window_Height}`;
-if(Ball.style.margin == !Window_Height){
-    Style_Tag.innerHTML = `
+Style_Tag.innerHTML = `
     @keyframes Bouncing {
         from {top: 0px;
         background-color:rgb(87, 4, 87);
@@ -164,6 +163,5 @@ if(Ball.style.margin == !Window_Height){
     }
       }
     `
-    Ball.style.animationName = "Bouncing"
-}
+Ball.style.animationName = "Bouncing"
 // ONLY HALF WORK COMPLETED 
