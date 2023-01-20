@@ -146,7 +146,7 @@ if(Ball.style.margin == !Window_Height){
 }
 */
 
-let Ball = document.querySelector('div');
+/*let Ball = document.querySelector('div');
 let Window_Height = window.innerHeight;
 window.onresize = function(){Window_Height = window.innerHeight};
 let Style_Tag= document.querySelector('style');
@@ -164,4 +164,5 @@ Style_Tag.innerHTML = `
       }
     `
 Ball.style.animationName = "Bouncing"
-// ONLY HALF WORK COMPLETED 
+// ONLY HALF WORK COMPLETED */
+
