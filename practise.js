@@ -123,13 +123,34 @@ let three = generator.next();
 alert(JSON.stringify(one));
 alert(JSON.stringify(two));
 alert(JSON.stringify(three));
+*/
+
+
+
+//BOUNCING BALL
 
 
 
 
+let Ball = document.querySelector('div');
+let Window_Height = window.innerHeight;
+window.onresize = function(){Window_Height = window.innerHeight};
 let Style_Tag= document.querySelector('style');
-document.getElementsByTagName('section')[0].innerHTML = `Height is ${window.innerHeight}`;
-if(Ball.style.margin == !Window_Height){
+Ball.style.animationName = "Bouncing"
+let Height = window.innerHeight;
+Style_Tag.innerHTML = `
+@keyframes Bouncing {
+    from {top: 0px;
+    background-color:rgb(87, 4, 87);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 43px;
+}
+    to {top: ${Height-142}px ;
+    background-color : rgb(141, 23, 196);
+}
+  }`
+window.onresize = function(){
+    Height = window.innerHeight;
     Style_Tag.innerHTML = `
     @keyframes Bouncing {
         from {top: 0px;
@@ -137,32 +158,9 @@ if(Ball.style.margin == !Window_Height){
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 43px;
     }
-        to {top: ${Window_Height-142}px ;
+        to {top: ${Height-142}px ;
         background-color : rgb(141, 23, 196);
     }
       }
     `
-    Ball.style.animationName = "Bouncing"
 }
-*/
-
-/*let Ball = document.querySelector('div');
-let Window_Height = window.innerHeight;
-window.onresize = function(){Window_Height = window.innerHeight};
-let Style_Tag= document.querySelector('style');
-document.getElementsByTagName('section')[0].innerHTML = `Height is ${Window_Height}`;
-Style_Tag.innerHTML = `
-    @keyframes Bouncing {
-        from {top: 0px;
-        background-color:rgb(87, 4, 87);
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 43px;
-    }
-        to {top: ${Window_Height-142}px ;
-        background-color : rgb(141, 23, 196);
-    }
-      }
-    `
-Ball.style.animationName = "Bouncing"
-// ONLY HALF WORK COMPLETED */
-
