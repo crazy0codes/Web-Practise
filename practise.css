@@ -420,8 +420,12 @@ div {
 }*/
 
 
+
+/* Profile Animation */
+
+/*
 .profile {
-    background-image: url("https://cdnb.artstation.com/p/assets/images/images/038/894/589/large/huaixuan-xiang-1-1.jpg?1624373698");
+    background-image: url("https://wallpapers.com/images/file/luffy-4k-grinning-eeuctpibdmaxi7k9.jpg");
     background-size: cover;
     border-radius: 50%;
     border: 5px solid rgb(74, 255, 74);
@@ -431,6 +435,14 @@ div {
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 26px;
 }
 @keyframes profile {
     from {
@@ -447,3 +459,5 @@ div {
         border-top: 7px solid rgb(218, 6, 6);
     }
 }
+
+*/
