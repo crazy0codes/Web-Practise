@@ -164,10 +164,9 @@ div {
 
            /****Line Animation****/
 
-div {
+/*div {
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
-    position: absolute;
 }
 .a1,.a2,.a3,.a4,.a5,.a6,.a7,.a8,.a9,.a10 {
     width: 10px;
@@ -419,3 +418,32 @@ div {
         
     }
 }*/
+
+
+.profile {
+    background-image: url("https://cdnb.artstation.com/p/assets/images/images/038/894/589/large/huaixuan-xiang-1-1.jpg?1624373698");
+    background-size: cover;
+    border-radius: 50%;
+    border: 5px solid rgb(74, 255, 74);
+    width: 200px;
+    height: 200px;
+    animation-name: profile;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes profile {
+    from {
+        border-top-left-radius: 40%;
+        border-bottom-left-radius:40%;
+        border-top-right-radius: 40%;
+        border: 5px solid rgb(0, 38, 255);
+    }
+    to {
+        border-top-right-radius: 55%;
+        border-bottom-right-radius: 40%;
+        border-top-right-radius: 50%;
+        border: 10px line rgb(11, 194, 255);
+        border-top: 7px solid rgb(218, 6, 6);
+    }
+}
