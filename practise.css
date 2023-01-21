@@ -52,7 +52,7 @@ h2::first-letter {
                 <img src="https://rukminim1.flixcart.com/image/416/416/kvfkivk0/poster/w/a/y/medium-eren-attack-on-titan-eren-jaeger-eren-yeager-shingeki-no-original-imag8c3fpyus38az.jpeg?q=70" alt="Eren Yeager">
                 <div>
                     <h2>Eren Yeager</h2>
-                    <p style="font-family:Verdana, Geneva, Tahoma, sans-serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem animi alias, molestias dolorem nostrum ipsum nam enim assumenda sint illum. Facere, nobis at. Accusantium ipsam, sit voluptas officia quaerat ducimus.</p>
+                    <p style="font-family:Verdana, Geneva, Tahoma, sans-serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitatia1m animi alias, molestias dolorem nostrum ipsum nam enim assumenda sint illum. Facere, nobis at. Accusantium ipsam, sit voluptas officia quaerat ducimus.</p>
                 </div>
             </section>
         </main>
@@ -130,7 +130,7 @@ div:hover {
     transform: translate(10px 10px);
     width: 60%;
     height: 60%;
-    transform: none;
+    transform: na1;
     border: 5px solid red;
     z-index: 1;
 }
@@ -163,14 +163,258 @@ div {
 */
 
            /****Line Animation****/
+
 div {
-    background-color: rgb(48, 134, 205);
-    width: 4px;
-    height: 0px;
-    animation-duration: 10s;
-    animation-name: line;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.a1,.a2,.a3,.a4,.a5,.a6,.a7,.a8,.a9,.a10 {
+    width: 10px;
+    height: 100px;
+    animation-name: a1;
     animation-iteration-count: infinite;
+    animation-duration: 1.6s;
+    display: inline-block;
+    margin: 20px;
 }
-@keyframes line {
-    
+.a3 {
+    animation-name: a3;
 }
+@keyframes a3 {
+    from {
+        background-color: black;
+        height: 0px;
+    }
+    to {
+        height: 200px;
+        background-color: black;
+    }
+}
+@keyframes a1 {
+    from {
+        background-color: rgb(29, 93, 176);
+        width: 10px;
+        height: 0px;
+    }
+    to {
+        background-color: rgb(0, 8, 255);
+        width: 10px;
+        height: 100px;
+    }
+}
+/*.a1 {
+    width: 10px;
+    height: 100px;
+    animation-name: a1;
+    animation-duration: 1.6s ;
+}
+.a2 {
+    width: 100px;
+    height: 10px;
+    animation-name: a2;
+    animation-delay: 1.6s;
+    animation-duration: 1.6s;
+}
+.a3 {
+    margin-left: 90px;
+    width: 10px;
+    height: 100px;
+    animation-name: a3;
+    animation-duration: 1.6s;
+    animation-delay: 3.2s;
+}
+.a4 {
+    margin-left: 90px;
+    width: 100px;
+    height: 10px;
+    animation-name: a4;
+    animation-duration: 1.6s;
+    animation-delay: 4.8s;
+}
+.a5 {
+    margin-left: 180px;
+    width: 10px;
+    height: 100px;
+    animation-name: a5;
+    animation-duration: 1.6s;
+    animation-delay: 6.4s;
+}
+.a6 {
+    margin-left: 90px;
+    width: 100px;
+    height: 10px;
+    animation-name: a6;
+    animation-duration: 1.6s;
+    animation-delay: 8.0s;
+}
+.a7 {
+    margin-left: 90px;
+    width: 10px;
+    height: 100px;
+    animation-name: a7;
+    animation-duration: 1.6s;
+    animation-delay: 9.6s;
+}
+.a8 {
+    margin-left: 90px;
+    width: 100px;
+    height: 10px;
+    animation-name: a8;
+    animation-duration: 1.6s;
+    animation-delay: 11.2s;
+}
+.a9 {
+    margin-left: 180px;
+    width: 10px;
+    height: 100px;
+    animation-name: a9;
+    animation-duration: 1.6s;
+    animation-delay: 12.8s;
+}
+.a10 {
+    margin-left: 180px;
+    width: 100px;
+    height: 10px;
+    animation-name: a10;
+    animation-duration: 1.6s;
+    animation-delay: 14.4s;
+}
+@keyframes a1 {
+    from {
+        background-color: black;
+        width: 10px;
+        height: 0px;
+    }
+    to {
+        background-color: rgb(255, 7, 7);
+        width: 10px;
+        height: 100px;
+    }
+}
+@keyframes a2 {
+    from {
+        background-color: black;
+        width: 0px;
+        height: 10px;
+    }
+    to {
+        background-color: rgb(255, 11, 11);
+        width: 100px;
+        height: 10px;
+    }
+}
+@keyframes a3 {
+    from {
+        background-color: rgb(255, 41, 41);
+        margin-left: 90px;
+        width: 10px;
+        height: 0px;
+    }
+    to {
+        background-color: rgb(255, 11, 11);
+        margin-left: 90px;
+        width: 10px;
+        height: 100px;
+    }
+}
+@keyframes a4 {
+    from {
+        background-color: rgb(255, 41, 41);
+        margin-left: 90px;
+        width: 0px;
+        height: 10px;
+    }
+    to {
+        background-color: rgb(255, 11, 11);
+        margin-left: 90px;
+        width: 100px;
+        height: 10px;
+    }
+}
+@keyframes a5 {
+    from {
+        background-color: black;
+        margin-left: 180px;
+        width: 10px;
+        height: 0px;
+    }
+    to {
+        background-color: black;
+        margin-left: 180px;
+        width: 10px;
+        height: 100px;
+    }
+}
+@keyframes a6 {
+    from {
+        background-color: black;
+        margin-left: 90px;
+        width: 100px;
+        height: 10px;
+    }
+    to {
+        background-color: black;
+        margin-left: 90px;
+        width: 0px;
+        height: 10px;
+    }
+}
+@keyframes a7 {
+    from {
+        background-color: black;
+        margin-left: 90px;
+        width: 10px;
+        height: 0px;
+    }
+    to {
+        background-color: black;
+        margin-left: 90px;
+        width: 10px;
+        height: 100px;
+        
+    }
+}
+@keyframes a8 {
+    from {
+        background-color: black;
+        margin-left: 90px;
+        width: 0px;
+        height: 10px;
+    }
+    to {
+        background-color: black;
+        margin-left: 90px;
+        width: 100px;
+        height: 10px;
+    }
+}
+@keyframes a9 {
+    from {
+        background-color: black;
+        margin-left: 180px;
+        width: 10px;
+        height: 0px;
+    }
+    to {
+        background-color: black;
+        margin-left: 180px;
+        width: 10px;
+        height: 100px;
+        
+    }
+}
+@keyframes a10 {
+    from {
+        background-color: black;
+        margin-left: 180px;
+        width: 0px;
+        height: 10px;
+    }
+    to {
+        background-color: black;
+        margin-left: 180px;
+        width: 100px;
+        height: 10px;
+        
+    }
+}*/
