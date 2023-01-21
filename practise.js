@@ -130,7 +130,7 @@ alert(JSON.stringify(three));
 //BOUNCING BALL
 
 
-
+/*
 
 let Ball = document.querySelector('div');
 let Window_Height = window.innerHeight;
@@ -165,7 +165,13 @@ window.onresize = function(){
     `
 }
 
+
+*/
+
+
+
 /*
+
 In onresize :
 when we assign a value to a variable dynamically then the value can't be taken outside the onresize function
 
@@ -184,4 +190,9 @@ Example:
 
        Here When the window dimensions changes then "Change" value is not passed below statements that means it doesn't updates the value of varaiable "Change"
        It only Changes within the resize function thats it 
+
+
 */
+
+
+//Line Animation

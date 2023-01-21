@@ -135,6 +135,10 @@ div:hover {
     z-index: 1;
 }
 */
+
+/* Bouncing Ball 
+
+
 *{
     padding: 0px;
     margin: 0px;
@@ -153,4 +157,20 @@ div {
     position: relative;
     font-weight: 600;
     color: white;
+}
+
+
+*/
+
+           /****Line Animation****/
+div {
+    background-color: rgb(48, 134, 205);
+    width: 4px;
+    height: 0px;
+    animation-duration: 10s;
+    animation-name: line;
+    animation-iteration-count: infinite;
+}
+@keyframes line {
+    
 }
