@@ -27,6 +27,6 @@ from selenium.webdriver.common.by import By
 import time
 
 website = 'https://google.com'
-drive = webdriver.Firefox()
+drive = webdriver.Chrome()
 drive.get('website')
 time.sleep(5)
