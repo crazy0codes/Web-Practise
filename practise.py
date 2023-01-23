@@ -20,12 +20,14 @@
     #print(Next*70)
     #print("Price is ")
     #print(price*70)
-
-
+   
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-import time
+a = input('Enter your Querry here!\n')
+webiste = 'https://google.com'
+
 drive = webdriver.Chrome("D:\PYTHON.code\chromedriver.exe")
-website = 'https://google.com'
-drive.get('website')
-time.sleep(5)
+
+drive.get(webiste)
+
+drive.find_element(By.TAG_NAME,'input').send_keys(a)
