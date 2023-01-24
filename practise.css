@@ -471,6 +471,7 @@ div {
     height: 100vh;
     width: 100%;
     scroll-snap-type: y mandatory;
+    overflow-y: scroll;
 }
 .one {
     background-color: rgb(173, 9, 170);
