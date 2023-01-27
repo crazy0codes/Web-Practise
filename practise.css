@@ -509,3 +509,6 @@ div {
 .one,.two,.three {
     scroll-snap-align: start;
 }
+td {
+    font-size: 20px;
+}

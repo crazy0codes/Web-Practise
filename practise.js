@@ -194,5 +194,14 @@ Example:
 
 */
 
+let x = document.querySelector('table')
+//Line Animation]
+let a = 1;
+function click1(){
+    fetch('https://jsonplaceholder.typicode.com/posts')
+    .then(response => response.json())
+    .then(json => { for (const key in json) {x.innerHTML += `<tr><td>${json[key].body}</td><td>${json[key].id}</td><td>${json[key].title}</td></tr>`
+}})
+}
 
-//Line Animation
+let k = "https://google.com";
