@@ -20,7 +20,7 @@
     #print(Next*70)
     #print("Price is ")
     #print(price*70)
-   
+import json
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
@@ -28,10 +28,9 @@ import time
 # Initialize the web driver
 path = 'practise.json'
 driver = webdriver.Chrome("D:\PYTHON.code\chromedriver.exe")
-driver.get("https://www.google.com/search?q=bitcoin+price+&rlz=1C1ONGR_enIN954IN954&sxsrf=AJOqlzUQEyRyxqCrL7r4ctEZi6lN_Xon8w%3A1674823771812&ei=W8jTY7meMeLV4-EPv6C5-Aw&ved=0ahUKEwj5t-vf5Of8AhXi6jgGHT9QDs8Q4dUDCBA&uact=5&oq=bitcoin+price+&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECCMQJzIECCMQJzIECCMQJzIFCAAQkQIyCwgAEIAEELEDEIMBMgoIABCxAxCDARBDMggIABCxAxCRAjIFCAAQkQIyCggAELEDEIMBEEMyCwgAEIAEELEDEIMBOgcIIxCwAxAnOgoIABBHENYEELADSgQIQRgASgQIRhgAUNACWNACYNEEaAFwAXgAgAHPAYgBzwGSAQMyLTGYAQCgAQHIAQnAAQE&sclient=gws-wiz-serp")
-price = driver.find_element(By.XPATH,'//*[@id="crypto-updatable_2"]/div[3]/div[2]/span[1]').text
+x = driver.get("https://www.google.com/search?q=bitcoin+price+&rlz=1C1ONGR_enIN954IN954&sxsrf=AJOqlzUQEyRyxqCrL7r4ctEZi6lN_Xon8w%3A1674823771812&ei=W8jTY7meMeLV4-EPv6C5-Aw&ved=0ahUKEwj5t-vf5Of8AhXi6jgGHT9QDs8Q4dUDCBA&uact=5&oq=bitcoin+price+&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECCMQJzIECCMQJzIECCMQJzIFCAAQkQIyCwgAEIAEELEDEIMBMgoIABCxAxCDARBDMggIABCxAxCRAjIFCAAQkQIyCggAELEDEIMBEEMyCwgAEIAEELEDEIMBOgcIIxCwAxAnOgoIABBHENYEELADSgQIQRgASgQIRhgAUNACWNACYNEEaAFwAXgAgAHPAYgBzwGSAQMyLTGYAQCgAQHIAQnAAQE&sclient=gws-wiz-serp")
 while True :
-    print(price)
-    print("\n")
-    time.sleep(2)
-    open(path,'w').write(price)
+    price = driver.find_element(By.XPATH,'//*[@id="crypto-updatable_2"]/div[3]/div[2]/span[1]').text
+    data = {"price": price}
+    open(path,'w').write(json.dumps(data))
+    time.sleep(60)
