@@ -193,9 +193,26 @@ Example:
 
 
 */
-
+/*
 //Line Animation]
 let a = document.querySelector('.one');
 fetch('practise.json')
     .then(res => res.json())
-    .then(value => a.innerHTML = `Rs. ${value.price}`)
+    .then(value => a.innerHTML = `Rs. ${value.price}`)*/
+/*
+function res(){
+    fetch('https://api.coindesk.com/v1/bpi/currentprice.json')
+    .then(response => response.json())
+    .then(price => console.log(price.data.bpi.USD.rate_float))
+      setInterval(getBtcPrice, 10000) }
+*/
+let x = document.querySelectorAll('p')[1];
+function call() {
+    //fetch("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd")
+    fetch("https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD")
+    .then(res => res.json())
+    .then(data => x.innerHTML = data.USD)
+}
+setInterval(() => {
+    call();
+},5000);
