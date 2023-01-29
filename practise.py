@@ -26,11 +26,22 @@ from selenium.webdriver.common.by import By
 import time
 
 # Initialize the web driver
-path = 'practise.json'
+#path = 'practise.json'
 driver = webdriver.Chrome("D:\PYTHON.code\chromedriver.exe")
-x = driver.get("https://www.google.com/search?q=bitcoin+price+&rlz=1C1ONGR_enIN954IN954&sxsrf=AJOqlzUQEyRyxqCrL7r4ctEZi6lN_Xon8w%3A1674823771812&ei=W8jTY7meMeLV4-EPv6C5-Aw&ved=0ahUKEwj5t-vf5Of8AhXi6jgGHT9QDs8Q4dUDCBA&uact=5&oq=bitcoin+price+&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECCMQJzIECCMQJzIECCMQJzIFCAAQkQIyCwgAEIAEELEDEIMBMgoIABCxAxCDARBDMggIABCxAxCRAjIFCAAQkQIyCggAELEDEIMBEEMyCwgAEIAEELEDEIMBOgcIIxCwAxAnOgoIABBHENYEELADSgQIQRgASgQIRhgAUNACWNACYNEEaAFwAXgAgAHPAYgBzwGSAQMyLTGYAQCgAQHIAQnAAQE&sclient=gws-wiz-serp")
-while True :
-    price = driver.find_element(By.XPATH,'//*[@id="crypto-updatable_2"]/div[3]/div[2]/span[1]').text
-    data = {"price": price}
-    open(path,'w').write(json.dumps(data))
-    time.sleep(60)
+driver.get("https://sves.org.in/ecap/StudentMaster.aspx")
+User_Name = '22A81A0639'
+Pass = 'Madhan#4332'
+User_Name_Input = driver.find_element(By.XPATH,'//*[@id="txtId2"]')
+User_Name_Input.send_keys(User_Name)
+Pass_Input = driver.find_element(By.XPATH,'//*[@id="txtPwd2"]')
+Pass_Input.send_keys(Pass)
+Submit = driver.find_element(By.XPATH,'//*[@id="imgBtn2"]')
+Submit.click()
+time.sleep(4)
+Performance = driver.find_element(By.XPATH,'//*[@id="tblReport"]/h1[2]')
+Div_Element = By.XPATH,'//*[@id="divProfile_Present"]'
+Attendance = Performance.find_element(Div_Element)
+Attendance_Percentage = Attendance.find_element(By.XPATH,'//*[@id="divProfile_Present"]/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr[1]/td/center/div/table/tbody/tr[1]/td/table/tbody/tr[10]/td[4]').text
+time.sleep(4)
+print(Attendance_Percentage)
+driver.quit()

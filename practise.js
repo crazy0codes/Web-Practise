@@ -211,7 +211,7 @@ function call() {
     //fetch("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd")
     fetch("https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD")
     .then(res => res.json())
-    .then(data => x.innerHTML = data.USD)
+    .then(data => x.innerHTML = Math.ceil(data.USD*80))
 }
 setInterval(() => {
     call();
