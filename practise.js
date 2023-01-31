@@ -259,3 +259,14 @@ function hero(a)
     console.log(a)
 }*/
 
+function add(a){
+    return function (b){
+        return function (c){
+            return a+b+c;
+        }
+    }
+}
+const k = add(1);
+const m = k(2);
+const df = m(232);
+console.log(df)
