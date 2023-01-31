@@ -258,15 +258,25 @@ function hero(a)
 {
     console.log(a)
 }*/
-
-function add(a){
-    return function (b){
-        return function (c){
-            return a+b+c;
-        }
+var Name = "sikem"
+var Study = "studying still"
+function madhan () {
+    var name = "Madhan";
+     var k = function () {
+        var study = "Game of thrones"
+        var ajd = name
+        console.log(`${name} ${study}`)
     }
+    return k;
 }
-const k = add(1);
-const m = k(2);
-const df = m(232);
-console.log(df)
+const Job = madhan();
+Job()
+let obj = {
+    Name : Name,
+    Study : Study,
+    Place : "Tanuku",
+    GetDetails : function () {console.log(
+        `My name is ${this.Name} and I am studying in ${this.Study} at ${this.Place}`
+    )}
+}
+obj.GetDetails()
