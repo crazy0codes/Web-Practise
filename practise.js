@@ -206,13 +206,56 @@ function res(){
     .then(price => console.log(price.data.bpi.USD.rate_float))
       setInterval(getBtcPrice, 10000) }
 */
-let x = document.querySelectorAll('p')[1];
+/*
+
+CRYPTO
+
+let a = document.querySelector('.BTC');
+let b = document.querySelector('.ETC');
+let c = document.querySelector('.USDT');
+let d = document.querySelector('.BNB');
+let e = document.querySelector('.USDC');
+let f = document.querySelector('.XRP');
+let g = document.querySelector('.BUSD');
+
 function call() {
     //fetch("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd")
     fetch("https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD")
     .then(res => res.json())
-    .then(data => x.innerHTML = Math.ceil(data.USD*80))
+    .then(data => a.innerHTML = data.USD);
+    fetch("https://min-api.cryptocompare.com/data/price?fsym=ETC&tsyms=USD")
+    .then(res => res.json())
+    .then(data => b.innerHTML = data.USD);
+    fetch("https://min-api.cryptocompare.com/data/price?fsym=USDT&tsyms=USD")
+    .then(res => res.json())
+    .then(data => c.innerHTML = data.USD);
+    fetch("https://min-api.cryptocompare.com/data/price?fsym=BNB&tsyms=USD")
+    .then(res => res.json())
+    .then(data => d.innerHTML = data.USD);
+    fetch("https://min-api.cryptocompare.com/data/price?fsym=USDC&tsyms=USD")
+    .then(res => res.json())
+    .then(data => e.innerHTML = data.USD);
+    fetch("https://min-api.cryptocompare.com/data/price?fsym=XRP&tsyms=USD")
+    .then(res => res.json())
+    .then(data => f.innerHTML = data.USD);
+    fetch("https://min-api.cryptocompare.com/data/price?fsym=BUSD&tsyms=USD")
+    .then(res => res.json())
+    .then(data => g.innerHTML = data.USD);
+
 }
 setInterval(() => {
     call();
 },5000);
+*/
+/*
+let x = document.querySelector('section')
+for (let i = 10;i <= 56;i++){
+    if(i !== 39){
+        x.innerHTML +=`<div onclick="hero(22A81A06${i})"><img src="https://sves.org.in/Ecap/StudentPhotos/22A81A06${i}.jpg"><p>22A81A06${i}</p></div>`
+    }
+}
+function hero(a)
+{
+    console.log(a)
+}*/
+
