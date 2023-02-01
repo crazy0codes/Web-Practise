@@ -258,6 +258,7 @@ function hero(a)
 {
     console.log(a)
 }*/
+/*
 var Name = "sikem"
 var Study = "studying still"
 function madhan () {
@@ -279,4 +280,4 @@ let obj = {
         `My name is ${this.Name} and I am studying in ${this.Study} at ${this.Place}`
     )}
 }
-obj.GetDetails()
+obj.GetDetails()*/
