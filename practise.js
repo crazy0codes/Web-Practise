@@ -280,4 +280,12 @@ let obj = {
         `My name is ${this.Name} and I am studying in ${this.Study} at ${this.Place}`
     )}
 }
-obj.GetDetails()*/
+obj.GetDetails()
+let Websocket_Connection = new WebSocket("wss://stream.binance.com:9443/ws/btcusdt@trade")
+let Display = document.querySelector('div')
+Websocket_Connection.onmessage = (price) => {
+    let Obj = price.data
+    let Price_JSON = JSON.parse(Obj)
+    let Real_Time_Price = parseFloat(Price_JSON.p).toFixed(2)
+    Display.innerHTML = Real_Time_Price;
+}*/
