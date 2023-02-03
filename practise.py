@@ -38,10 +38,14 @@ Pass_Input.send_keys(Pass)
 Submit = driver.find_element(By.XPATH,'//*[@id="imgBtn2"]')
 Submit.click()
 time.sleep(4)
-Performance = driver.find_element(By.XPATH,'//*[@id="tblReport"]/h1[2]')
-Div_Element = By.XPATH,'//*[@id="divProfile_Present"]'
-Attendance = Performance.find_element(Div_Element)
-Attendance_Percentage = Attendance.find_element(By.XPATH,'//*[@id="divProfile_Present"]/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr[1]/td/center/div/table/tbody/tr[1]/td/table/tbody/tr[10]/td[4]').text
-time.sleep(4)
-print(Attendance_Percentage)
+link = driver.find_element(By.XPATH,'//*[@id="tblReport"]/h1[2]')
+if link == True :
+    print("IT is here")
+else print()
+#Performance = driver.find_element(By.XPATH,'//*[@id="tblReport"]/h1[2]')
+#Div_Element = By.XPATH,'//*[@id="divProfile_Present"]'
+#Attendance = Performance.find_element(Div_Element)
+#Attendance_Percentage = Attendance.find_element(By.XPATH,'//*[@id="divProfile_Present"]/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr[1]/td/center/div/table/tbody/tr[1]/td/table/tbody/tr[10]/td[4]').text
+#time.sleep(4)
+#print(Attendance_Percentage)
 driver.quit()
