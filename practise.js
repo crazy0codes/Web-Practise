@@ -289,3 +289,31 @@ Websocket_Connection.onmessage = (price) => {
     let Real_Time_Price = parseFloat(Price_JSON.p).toFixed(2)
     Display.innerHTML = Real_Time_Price;
 }*/
+
+// Get the elements you want to show/hide
+const elements = document.querySelectorAll('.Main');
+
+// Check if the elements are within the window height
+for (const element of elements) {
+  const elementPosition = element.getBoundingClientRect().top;
+  const elementPositionb = element.getBoundingClientRect().bottom;
+  if (elementPosition <= window.innerHeight+200) {
+    element.classList.add('visible');
+  }
+}
+
+// Listen for scroll events to update the element visibility
+window.addEventListener('scroll', function() {
+  for (const element of elements) {
+    const elementPosition = element.getBoundingClientRect().top;
+    const elementPositionb = element.getBoundingClientRect().bottom;
+    if (elementPosition <= window.innerHeight) {
+      element.classList.add('visible');
+      element.classList.remove('non-visible');
+    }
+    if(elementPositionb >= window.innerHeight+200){
+        element.classList.add('non-visible');
+        element.classList.remove('visible')
+      }
+  }
+});
