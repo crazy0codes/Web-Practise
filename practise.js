@@ -307,6 +307,8 @@ window.addEventListener('scroll', function() {
   for (const element of elements) {
     const elementPosition = element.getBoundingClientRect().top;
     const elementPositionb = element.getBoundingClientRect().bottom;
+    const Scroll_height = document.documentElement.scrollTop;
+    window.getComputedStyle('body').setProperty('--scrollbar-height',Scroll_height + "px");
     if (elementPosition <= window.innerHeight) {
       element.classList.add('visible');
       element.classList.remove('non-visible');

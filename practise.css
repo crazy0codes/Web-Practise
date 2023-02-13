@@ -521,3 +521,16 @@ img:hover {
     opacity: 0;
     transition: ease-out 0.34s;
 }
+body {
+    --scrollbar-height:10px;
+}
+body::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+  }
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #c20808;
+    height: var(--scrollbar-height);
+  }
+  
