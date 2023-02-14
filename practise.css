@@ -526,11 +526,22 @@ body {
 }
 body::-webkit-scrollbar {
     width: 12px;
-    background-color: #F5F5F5;
+    background-color: #a14c4c;
+    animation: mymove 1s infinite;
+}
+  
+/* Select the scrollbar thumb element */
+::-webkit-scrollbar-thumb {
+    background-color: #000000; /* Set initial color of the scrollbar thumb */
+    animation: change-color 1s infinite;
   }
   
-body::-webkit-scrollbar-thumb {
-    background-color: #c20808;
-    height: var(--scrollbar-height);
+  /* Define the animation that changes the color of the scrollbar thumb */
+  @keyframes change-color {
+    from {
+      background-color: #000000;
+    }
+    to {
+        background-color: rgb(189, 33, 33);
+    }
   }
-  
