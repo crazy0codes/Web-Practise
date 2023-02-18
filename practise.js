@@ -319,13 +319,17 @@ window.addEventListener('scroll', function() {
 });
 */
 
-function User(Name) {
+let user;
+let admin;
+function Data(Name) {
     this.Name = Name;
-    this.isStudent = confirm("Are you student ?");
-    this.isYoung = confirm("Are your married ?");
-    return this;
+    this.isStudent = null
+    Name.toLowerCase() === "admin" ? this.isAdmin = true
+    :this.isAdmin = false;
 }
 
-const School = new User("Madhan");
-
-console.log(`His name is ${School.Name} and he is ${School.isStudent ? "student" : "not a student"} `)
+user = new Data("Madhan");
+delete user.isAdmin
+admin = new Data("aDMIN");
+console.log(user.isAdmin)
+alert(user ?. isAdmin)
