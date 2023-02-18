@@ -491,4 +491,38 @@ img:hover {
     margin: 0px;
     padding: 0px;
     scroll-behavior: smooth;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+main {
+    height: 100vh;
+    overflow-y:scroll;
+    scroll-snap-type: y mandatory;
+    background-color: black;
+    color: white;
+}
+.content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    scroll-snap-align:start;
+    margin: 40px;
+}
+.content>h2 {
+    text-align: center;
+    font-size: 46px;
+    margin-bottom: 30px;
+}
+.content>h2::first-letter {
+    color: rgb(42, 166, 127);
+    font-size: 90px;
+}
+.content>p {
+    display: flex;
+    justify-content: center;
+    margin: 0px 50px 0px 50px
+}
+p {
+    color: chartreuse;
 }
