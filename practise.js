@@ -319,6 +319,7 @@ window.addEventListener('scroll', function() {
 });
 */
 
+/*
 let user;
 let admin;
 function Data(Name) {
@@ -333,3 +334,5 @@ delete user.isAdmin
 admin = new Data("aDMIN");
 console.log(user.isAdmin)
 alert(user ?. isAdmin)
+*/
+
