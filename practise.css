@@ -538,7 +538,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("https://www.hdwallpapers.in/download/demon_slayer_zenitsu_agatsuma_with_background_of_gray_and_lighting_4k_hd_anime-3840x2160.jpg");
+    flex-direction: column;
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/images6/Anime-Desktop-Wallpaper-4K-1.jpg");
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -546,19 +547,33 @@ body {
 }
 
 div {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     border-radius: 16px;
     background-color: rgba(255, 255, 255, 0.066);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(0px);
     box-shadow: 0px 0px 20px 0.7px black;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition-duration: 2s;
+    border-color: transparent;
 }
 
 h1 {
     font-size: 40px;
     text-shadow: 4px 4px 4px black;
     color: white;
+}
+
+div:hover {
+    backdrop-filter: blur(10px);
+    transition-duration: 2s;
+    scale: 1.01;
+}
+img {
+    position: relative;
+    height: 150px;
+    top: 10px;
+    border-color: transparent;
 }
